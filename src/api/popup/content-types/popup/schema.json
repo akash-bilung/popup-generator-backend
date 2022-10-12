@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "popups",
+  "info": {
+    "singularName": "popup",
+    "pluralName": "popups",
+    "displayName": "Popup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "Style": {
+      "type": "json"
+    },
+    "Content": {
+      "type": "json"
+    },
+    "Order": {
+      "type": "json"
+    },
+    "Code": {
+      "type": "text"
+    }
+  }
+}
